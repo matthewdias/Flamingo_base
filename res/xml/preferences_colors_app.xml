@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samruston.twitter.settings.preferences.ThemePreviewPreference android:layout="@layout/theme_preview_preference" />
+    <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/primaryColor" android:layout="@layout/settings_item_color_layout" android:title="@string/primary_color" android:key="primaryColor" />
+    <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/backgroundColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/background_color" android:key="backgroundColor" />
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/compose_new_tweet">
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/fabColor" android:layout="@layout/settings_item_color_layout" android:title="@string/background_color" android:key="fabColor" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/fabIconColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/image_color" android:key="fabIconColor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/title">
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/titleColor" android:layout="@layout/settings_item_color_layout" android:title="@string/title_text_color" android:key="titleColor" />
+        <com.samruston.twitter.settings.preferences.ThemeListPreference android:entries="@array/opacitySelection" android:id="@id/titleOpacity" android:layout="@layout/settings_item_text_layout_list_no_divider" android:title="@string/title_opacity" android:key="titleOpacity" android:defaultValue="full" android:entryValues="@array/opacitySelectionValues" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/tabs">
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/tabSelectedColor" android:layout="@layout/settings_item_color_layout" android:title="@string/tab_selected_color" android:key="tabSelectedColor" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/tabUnselectedColor" android:layout="@layout/settings_item_color_layout" android:title="@string/tab_unselected_color" android:key="tabUnselectedColor" />
+        <com.samruston.twitter.settings.preferences.ThemeListPreference android:entries="@array/opacitySelection" android:id="@id/tabUnselectedOpacity" android:layout="@layout/settings_item_text_layout_list_no_divider" android:title="@string/tab_unselected_opacity" android:key="tabUnselectedOpacity" android:defaultValue="full" android:entryValues="@array/opacitySelectionValues" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.ThemeSwitchPreference android:id="@id/showTabLine" android:layout="@layout/settings_item_text_layout" android:title="@string/show_tab_selected_line" android:key="showTabLine" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/tabLineColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/tab_line_color" android:key="tabLineColor" android:dependency="showTabLine" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/menu_items">
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/menuItemColor" android:layout="@layout/settings_item_color_layout" android:title="@string/menu_item_color" android:key="menuItemColor" />
+        <com.samruston.twitter.settings.preferences.ThemeListPreference android:entries="@array/opacitySelection" android:id="@id/menuItemOpacity" android:layout="@layout/settings_item_text_layout_list_no_divider" android:title="@string/menu_item_opacity" android:key="menuItemOpacity" android:defaultValue="full" android:entryValues="@array/opacitySelectionValues" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/bottom_bar">
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/bottomBarColor" android:layout="@layout/settings_item_color_layout" android:title="@string/bottom_bar_background_color" android:key="bottomBarColor" />
+    </PreferenceCategory>
+</PreferenceScreen>

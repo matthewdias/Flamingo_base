@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samruston.twitter.views.ScalingRobotoTextView android:textSize="18.0dip" android:textColor="@color/textDark" android:id="@id/edtTxt1" android:background="@drawable/chips_edittext_gb" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" app:typeface="roboto_medium"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

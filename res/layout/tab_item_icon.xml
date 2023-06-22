@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@android:id/icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/badge" android:background="@drawable/circle_dark" android:padding="3.0dip" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginBottom="-6.0dip" android:src="@drawable/circle_bright" android:layout_above="@android:id/icon" android:layout_marginStart="-4.0dip" android:layout_toEndOf="@android:id/icon" />
+</RelativeLayout>

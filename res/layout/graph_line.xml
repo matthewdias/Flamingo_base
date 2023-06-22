@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/yAxis" android:layout_width="25.0dip" android:layout_height="fill_parent" android:weightSum="5.0" android:layout_alignParentLeft="true">
+        <com.devspark.robototextview.widget.RobotoTextView android:textSize="13.0dip" android:ellipsize="none" android:gravity="center|right|top" android:id="@id/value5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:includeFontPadding="false" android:layout_alignParentTop="true" app:typeface="roboto_medium" />
+        <LinearLayout android:orientation="vertical" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.0" android:layout_below="@id/value5">
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="12.0dip" android:ellipsize="none" android:gravity="bottom|center|right" android:id="@id/value4" android:layout_width="fill_parent" android:layout_height="0.0dip" android:includeFontPadding="false" android:layout_weight="1.0" app:typeface="roboto_medium" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="12.0dip" android:ellipsize="none" android:gravity="bottom|center|right" android:id="@id/value3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:includeFontPadding="false" android:layout_weight="1.0" app:typeface="roboto_medium" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="12.0dip" android:ellipsize="none" android:gravity="bottom|center|right" android:id="@id/value2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:includeFontPadding="false" android:layout_weight="1.0" app:typeface="roboto_medium" />
+            <com.devspark.robototextview.widget.RobotoTextView android:textSize="12.0dip" android:ellipsize="none" android:gravity="bottom|center|right" android:id="@id/value1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:includeFontPadding="false" android:layout_weight="1.0" app:typeface="roboto_medium" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bars" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="16.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="10.0dip" android:layout_toRightOf="@id/yAxis" android:layout_above="@id/xAxis">
+        <View android:id="@id/divider5Line" android:background="@drawable/dotted_line_graph_dark" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="4.0dip" android:layout_alignParentTop="true" android:alpha="0.3" />
+        <LinearLayout android:orientation="vertical" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="4.0">
+            <RelativeLayout android:id="@id/divider4" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <View android:id="@id/divider4Line" android:background="@drawable/dotted_line_graph_dark" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" android:alpha="0.3" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/divider3" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <View android:id="@id/divider3Line" android:background="@drawable/dotted_line_graph_dark" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" android:alpha="0.3" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/divider2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <View android:id="@id/divider2Line" android:background="@drawable/dotted_line_graph_dark" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" android:alpha="0.3" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/divider1" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <View android:id="@id/divider1Line" android:background="@drawable/dotted_line_graph_dark" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" android:alpha="0.3" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.samruston.twitter.views.graphs.LineGraphInner android:id="@id/inner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/xAxis" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:weightSum="5.0" android:layout_toRightOf="@id/yAxis" android:layout_alignParentBottom="true">
+        <com.devspark.robototextview.widget.RobotoTextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="left" android:id="@id/time1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:typeface="roboto_medium" />
+        <com.devspark.robototextview.widget.RobotoTextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="left" android:id="@id/time2" android:paddingLeft="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:typeface="roboto_medium" />
+        <com.devspark.robototextview.widget.RobotoTextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/time3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:typeface="roboto_medium" />
+        <com.devspark.robototextview.widget.RobotoTextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="right" android:id="@id/time4" android:paddingRight="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:typeface="roboto_medium" />
+        <com.devspark.robototextview.widget.RobotoTextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="right" android:id="@id/time5" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" app:typeface="roboto_medium" />
+    </LinearLayout>
+</merge>

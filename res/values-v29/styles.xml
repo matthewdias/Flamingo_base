@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/change_image_transform</item>
+        <item name="android:windowSharedElementExitTransition">@transition/change_image_transform</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="actionBarStyle">@style/Flamingo_Toolbar</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="colorPrimary">@color/accentColor</item>
+        <item name="colorPrimaryDark">@color/statusBarDark</item>
+        <item name="toolbarStyle">@style/Flamingo_Toolbar</item>
+    </style>
+    <style name="SettingsTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowBackground">@color/settings_light_background</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="actionBarStyle">@style/Flamingo_Toolbar_Light</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorPrimary">@color/settings</item>
+        <item name="colorPrimaryDark">@color/settingsDarker</item>
+        <item name="settingsDivider">@color/divider_settings</item>
+        <item name="settingsHeaderText">@color/textDark</item>
+        <item name="settingsItemBackground">@drawable/settings_light</item>
+        <item name="settingsText">@color/textDark</item>
+        <item name="settingsTextAlpha">@color/textDarkAlphaAlpha</item>
+        <item name="toolbarStyle">@style/Flamingo_Toolbar</item>
+    </style>
+    <style name="SettingsThemeDark" parent="@style/Theme.AppCompat">
+        <item name="android:windowBackground">@color/settings_dark_background</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="actionBarStyle">@style/Flamingo_ActionBar_Dark</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorPrimary">@color/settings_darker_background</item>
+        <item name="colorPrimaryDark">@color/settings_darkest_background</item>
+        <item name="settingsDivider">@color/divider_on_dark</item>
+        <item name="settingsHeaderText">@android:color/white</item>
+        <item name="settingsItemBackground">@drawable/settings_dark</item>
+        <item name="settingsText">@android:color/white</item>
+        <item name="settingsTextAlpha">@color/textWhiteAlphaAlpha</item>
+        <item name="toolbarStyle">@style/Flamingo_Toolbar_Dark</item>
+    </style>
+    <style name="SlidingTheme" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowSharedElementEnterTransition">@transition/change_image_transform</item>
+        <item name="android:windowSharedElementExitTransition">@transition/change_image_transform</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="actionBarStyle">@style/Flamingo_Toolbar</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="colorPrimary">@color/accentColor</item>
+        <item name="colorPrimaryDark">@color/statusBarDark</item>
+        <item name="toolbarStyle">@style/Flamingo_Toolbar</item>
+    </style>
+</resources>

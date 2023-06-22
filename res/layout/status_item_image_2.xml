@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/multiImageContainer2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="2.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samruston.twitter.views.TransitionImageView android:id="@id/image1" android:clickable="true" android:layout_width="0.0dip" android:layout_height="160.0dip" android:layout_weight="1.0" android:contentDescription="@string/photo" android:layout_marginEnd="4.0dip" android:transitionName="image" />
+    <com.samruston.twitter.views.TransitionImageView android:id="@id/image2" android:clickable="true" android:layout_width="0.0dip" android:layout_height="160.0dip" android:layout_weight="1.0" android:contentDescription="@string/photo" android:layout_marginStart="4.0dip" android:transitionName="image" />
+</LinearLayout>

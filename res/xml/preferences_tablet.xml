@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/tabletSelectedColor" android:layout="@layout/settings_item_color_layout" android:title="@string/tab_selected_color" android:key="tabletSelectedColor" />
+    <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/tabletUnselectedColor" android:layout="@layout/settings_item_color_layout" android:title="@string/tab_unselected_color" android:key="tabletUnselectedColor" />
+    <com.samruston.twitter.settings.preferences.ThemeListPreference android:entries="@array/opacitySelection" android:id="@id/tabletUnselectedOpacity" android:layout="@layout/settings_item_text_layout_list" android:title="@string/tab_unselected_opacity" android:key="tabletUnselectedOpacity" android:defaultValue="medium" android:entryValues="@array/opacitySelectionValues" />
+    <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/tabletMenuColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/side_menu_background" android:key="tabletMenuColor" />
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/tabletAlwaysDual" android:layout="@layout/settings_item_text_layout" android:title="@string/always_show_2_panels" android:key="tabletAlwaysDual" android:summary="@string/by_default_smaller_screens" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/tabletMediaPreviewFull" android:layout="@layout/settings_item_text_layout" android:title="@string/full_screen_media_previews" android:key="tabletMediaPreviewFull" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/tabletPadding" android:layout="@layout/settings_item_text_layout" android:title="@string/show_padding_on_sides" android:key="tabletPadding" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/useSideMenu" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/use_side_menu" android:key="useSideMenu" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

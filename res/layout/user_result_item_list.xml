@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/container" android:background="?selectableItemBackground" android:paddingTop="16.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:id="@id/details" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <ImageView android:id="@id/icon" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/profile_picture_circle" android:scaleType="fitCenter" android:layout_marginStart="16.0dip" android:layout_alignParentStart="true" />
+        <FrameLayout android:id="@id/verified" android:background="@drawable/circle_bright" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginBottom="-5.0dip" android:layout_alignBottom="@id/icon" android:layout_marginEnd="-5.0dip" android:layout_alignEnd="@id/icon">
+            <ImageView android:layout_gravity="center" android:id="@id/verifiedIcon" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/verified_icon" />
+        </FrameLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/icon">
+            <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="16.0dip" android:textColor="@color/textDark" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:typeface="roboto_medium" />
+            <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="14.0dip" android:textColor="@color/textDarkAlphaAlpha" android:ellipsize="end" android:id="@id/username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:paddingEnd="8.0dip" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/name" app:typeface="roboto_regular" />
+        </RelativeLayout>
+        <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="14.0dip" android:textColor="@color/textDarkAlpha" android:ellipsize="end" android:autoLink="none" android:linksClickable="false" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" android:layout_below="@id/content" android:lineSpacingExtra="4.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" android:layout_toEndOf="@id/icon" />
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" android:layout_below="@id/details" android:layout_marginStart="72.0dip" />
+</RelativeLayout>

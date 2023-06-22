@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samruston.twitter.settings.preferences.CustomListPreference android:icon="@drawable/ic_font_download_black_24dp" android:entries="@array/fontsArray" android:id="@id/fonts" android:layout="@layout/settings_item_text_layout_list_icon" android:title="@string/font" android:key="fonts" android:defaultValue="default" android:entryValues="@array/fontsArrayValues" />
+    <com.samruston.twitter.settings.preferences.CustomListPreference android:icon="@drawable/ic_format_size_black_24dp" android:entries="@array/fontSizes" android:id="@id/textSize" android:layout="@layout/settings_item_text_layout_list_icon" android:title="@string/font_size" android:key="textSize" android:defaultValue="14" android:entryValues="@array/fontSizesValues" />
+    <com.samruston.twitter.settings.preferences.CustomListPreference android:icon="@drawable/ic_format_line_spacing_black_24dp" android:entries="@array/lineSpacingSizes" android:id="@id/lineSpacingSize" android:layout="@layout/settings_item_text_layout_list_icon_no_divider" android:title="@string/line_spacing" android:key="lineSpacingSize" android:defaultValue="1" android:entryValues="@array/lineSpacingSizesValues" />
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:entries="@array/emojiMode" android:id="@id/emojiMode" android:layout="@layout/settings_item_text_layout_list" android:title="@string/emojis" android:key="emojiMode" android:defaultValue="system" android:entryValues="@array/emojiModeValues" app:requiresAndroidVersion="19" />
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:entries="@array/languages" android:layout="@layout/settings_item_text_layout_list_no_divider" android:title="@string/language" android:key="language" android:defaultValue="default" android:entryValues="@array/languagesValues" />
+    </PreferenceCategory>
+</PreferenceScreen>

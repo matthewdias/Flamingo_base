@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.samruston.twitter.views.hover.BaseHoverView android:id="@id/root" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:id="@id/appBar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStart="72.0dip" app:layout_scrollFlags="scroll|enterAlways" app:popupTheme="@style/AppTheme.PopupOverlay" app:titleTextAppearance="@style/Flamingo_Toolbar.Title" />
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@id/frameLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:src="@drawable/quill_white" app:backgroundTint="@color/colorPrimary" app:backgroundTintMode="src_in" app:layout_behavior="com.samruston.twitter.helpers.ScrollingFABBehavior" app:pressedTranslationZ="4.0dip" app:rippleColor="@color/colorPrimaryDark" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</com.samruston.twitter.views.hover.BaseHoverView>

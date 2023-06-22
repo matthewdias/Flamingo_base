@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/tweet" android:title="@string/tweet" />
+    <item android:id="@id/direct_message" android:title="@string/send_message" />
+    <item android:id="@id/add_to_list" android:title="@string/add_to_list" />
+    <item android:id="@id/favourite" android:title="@string/favorite" />
+    <item android:id="@id/view_lists" android:title="@string/view_lists" />
+    <item android:id="@id/mute" android:title="@string/mute" />
+    <item android:id="@id/block" android:title="@string/block" />
+    <item android:id="@id/hide_retweets" android:title="@string/hide_retweets" />
+    <item android:id="@id/share" android:title="@string/share" />
+</menu>

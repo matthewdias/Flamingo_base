@@ -1,0 +1,56 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: Flamingo_base.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- lib/armeabi-v7a/librsjni.so
+- lib/armeabi-v7a/librsjni_androidx.so
+- lib/armeabi-v7a/libRSSupport.so
+- lib/x86_64/librsjni.so
+- lib/x86_64/libRSSupport.so
+- lib/x86_64/librsjni_androidx.so
+- lib/arm64-v8a/librsjni_androidx.so
+- lib/arm64-v8a/libRSSupport.so
+- lib/arm64-v8a/librsjni.so
+- lib/x86/librsjni.so
+- lib/x86/librsjni_androidx.so
+- lib/x86/libRSSupport.so
+- png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '23'
+  targetSdkVersion: '31'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  LICENSE_OFL: '8'
+  LICENSE_UNICODE: '8'
+  androidsupportmultidexversion.txt: '8'
+  play-services-base.properties: '8'
+  play-services-basement.properties: '8'
+  play-services-clearcut.properties: '8'
+  play-services-flags.properties: '8'
+  play-services-gcm.properties: '8'
+  play-services-iid.properties: '8'
+  play-services-location.properties: '8'
+  play-services-phenotype.properties: '8'
+  play-services-places-placereport.properties: '8'
+  play-services-stats.properties: '8'
+  play-services-tasks.properties: '8'
+  play-services-vision-common.properties: '8'
+  play-services-vision.properties: '8'
+  okhttp3/internal/publicsuffix/NOTICE: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+  org/jsoup/nodes/entities-base.properties: '8'
+  org/jsoup/nodes/entities-full.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.7.0
+versionInfo:
+  versionCode: '309'
+  versionName: 20.9.0

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="?settingsItemBackground" android:paddingTop="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:elevation="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samruston.twitter.views.ScalingRobotoTextViewSystemOnly android:textSize="16.0dip" android:textColor="@drawable/settings_text" android:id="@android:id/title" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textAlignment="viewStart" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" app:typeface="roboto_medium" />
+    <com.samruston.twitter.views.ScalingRobotoTextViewSystemOnly android:textSize="16.0dip" android:textColor="@drawable/settings_text" android:ellipsize="end" android:id="@android:id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:alpha="0.8" android:textAlignment="viewEnd" android:layout_marginEnd="32.0dip" android:layout_toEndOf="@android:id/title" android:layout_alignParentEnd="true" />
+    <View android:background="?settingsDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="16.0dip" android:layout_below="@android:id/title" />
+</RelativeLayout>

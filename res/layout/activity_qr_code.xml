@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:background="@android:color/black" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:keepScreenOn="true" android:layout_alignParentStart="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samruston.twitter.libs.qr.ui.camera.CameraSourcePreview android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.samruston.twitter.libs.qr.ui.camera.GraphicOverlay android:id="@id/graphicOverlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.samruston.twitter.libs.qr.ui.camera.CameraSourcePreview>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom">
+        <ImageView android:id="@id/cursor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/crop_big_white" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/bottom" android:background="@android:color/black" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/output" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="150.0dip" android:layout_centerVertical="true" android:layout_marginStart="24.0dip" android:layout_toEndOf="@id/output">
+            <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="22.0dip" android:textColor="@android:color/white" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/share_your_code" app:typeface="roboto_bold" />
+            <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="18.0dip" android:textColor="@color/textWhiteAlpha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tap_to_expand_and_customise" android:layout_below="@id/title" app:typeface="roboto_medium" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/expanded" android:background="@android:color/black" android:paddingTop="380.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.devspark.robototextview.widget.RobotoButton android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/share" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:layout_width="255.0dip" android:layout_height="wrap_content" android:text="@string/share" android:stateListAnimator="@null" android:backgroundTint="#ffe91e63" android:backgroundTintMode="src_in" app:typeface="roboto_bold" />
+        <com.devspark.robototextview.widget.RobotoButton android:textColor="@android:color/white" android:layout_gravity="center_horizontal" android:id="@id/choose_color" android:paddingTop="24.0dip" android:paddingBottom="24.0dip" android:layout_width="255.0dip" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/choose_color" android:stateListAnimator="@null" android:backgroundTint="#ffe91e63" android:backgroundTintMode="src_in" app:typeface="roboto_bold" />
+    </LinearLayout>
+    <ImageView android:id="@id/outputBig" android:visibility="invisible" android:layout_width="150.0dip" android:layout_height="150.0dip" android:layout_marginBottom="25.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="24.0dip" android:layout_alignParentStart="true" />
+    <RelativeLayout android:background="@android:color/holo_blue_bright" android:visibility="gone" android:layout_width="255.0dip" android:layout_height="255.0dip" android:layout_centerHorizontal="true" />
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetStart="72.0dip" app:layout_scrollFlags="scroll|enterAlways" app:popupTheme="@style/AppTheme.PopupOverlay" app:titleTextColor="@android:color/white" />
+</RelativeLayout>

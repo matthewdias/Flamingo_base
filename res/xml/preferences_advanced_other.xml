@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/settings_item_header_top" android:title="@string/transitions" android:summary="@string/configure_how_windows">
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:icon="@drawable/ic_arrow_upward_black_24dp" android:entries="@array/activityTransition" android:id="@id/activityTransition" android:layout="@layout/settings_item_text_layout_list_icon" android:title="@string/opening_transition" android:key="activityTransition" android:defaultValue="right" android:entryValues="@array/activityTransitionValues" />
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:icon="@drawable/ic_arrow_downward_black_24dp" android:entries="@array/swipeDirection" android:id="@id/swipeDirection" android:layout="@layout/settings_item_text_layout_list_icon" android:title="@string/close_swipe_directon" android:key="swipeDirection" android:defaultValue="left" android:entryValues="@array/swipeDirectionValues" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/enableImageSwipe" android:layout="@layout/settings_item_text_layout" android:title="@string/swipe_from_any_direction_for_images" android:key="enableImageSwipe" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/closeImageAnimation" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/close_image_transition" android:key="closeImageAnimation" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/compose_new_tweet">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_undo_black_24dp" android:id="@id/undoTweet" android:layout="@layout/settings_item_text_layout_icon" android:title="@string/show_undo_before_sending_tweet" android:key="undoTweet" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_hashtag_black_24dp" android:id="@id/autoInsertReplyHashtags" android:layout="@layout/settings_item_text_layout_icon" android:title="@string/insert_hashtags_when_replying" android:key="autoInsertReplyHashtags" android:summary="@string/automatically_insert_hashtags" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_notifications_white_24dp" android:id="@id/composeNotification" android:layout="@layout/settings_item_text_layout_icon_no_divider" android:title="@string/compose_notification" android:key="composeNotification" android:summary="@string/show_a_constant_notification" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/geotagging" android:summary="@string/configure_how_locations">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/autoLocation" android:layout="@layout/settings_item_text_layout" android:title="@string/geotag_tweets_automatically" android:key="autoLocation" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/locationPrecise" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/use_precise_location" android:key="locationPrecise" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/other">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/userTheme" android:layout="@layout/settings_item_text_layout" android:title="@string/different_pages_for_accounts" android:key="userTheme" android:defaultValue="false" />
+        <Preference android:id="@id/appIconPref" android:layout="@layout/settings_item_text_layout" android:title="@string/app_icon" android:key="appIconPref" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/swapPopularSearch" android:layout="@layout/settings_item_text_layout" android:title="@string/swap_tweets_and_popular_in_search" android:key="swapPopularSearch" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/clearNotificationsOpen" android:layout="@layout/settings_item_text_layout" android:title="@string/clear_notifications_on_open" android:key="clearNotificationsOpen" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/allTextSameSize" android:layout="@layout/settings_item_text_layout" android:title="@string/all_text_same_size" android:key="allTextSameSize" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/showVerifiedToggle" android:layout="@layout/settings_item_text_layout" android:title="@string/show_verified_toggle" android:key="showVerifiedToggle" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/container" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip" android:elevation="2.0dip" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/replyLineTop" android:background="@drawable/conversation_line_bottom" android:layout_width="3.0dip" android:layout_height="16.0dip" android:layout_marginStart="35.0dip" />
+    <View android:id="@id/replyLineBottom" android:background="@drawable/conversation_line_top" android:layout_width="3.0dip" android:layout_height="16.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="35.0dip" />
+    <View android:id="@id/replyLine" android:background="@drawable/dotted_line_chain" android:layout_width="3.0dip" android:layout_height="17.0dip" android:layout_centerVertical="true" android:layerType="software" android:layout_marginStart="35.0dip" />
+    <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="16.0dip" android:textColor="@color/textDark" android:ellipsize="end" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:maxLines="1" android:layout_centerVertical="true" android:textAlignment="viewStart" android:layout_marginStart="72.0dip" android:layout_alignParentStart="true" app:typeface="roboto_medium" />
+</RelativeLayout>

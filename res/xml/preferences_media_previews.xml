@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/gif_rounded_24dp_black" android:id="@id/autoPlayGifs" android:layout="@layout/settings_item_text_layout_icon" android:title="@string/auto_play_gifs" android:key="autoPlayGifs" android:defaultValue="true" />
+    <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_videocam_black_24dp" android:id="@id/autoPlayVideos" android:layout="@layout/settings_item_text_layout_icon" android:title="@string/auto_play_videos" android:key="autoPlayVideos" android:defaultValue="false" />
+    <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/youtube_play_icon" android:id="@id/openYouTubeExternal" android:layout="@layout/settings_item_text_layout_icon_no_divider" android:title="@string/play_in_youtube_app" android:key="openYouTubeExternal" android:defaultValue="false" />
+    <PreferenceCategory android:layout="@layout/settings_item_header_just_description" android:summary="@string/change_the_size_of_media_previews">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/scaleImageToPreview" android:layout="@layout/settings_item_text_layout" android:title="@string/show_full_size_instead_of_cropping" android:key="scaleImageToPreview" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/smallMediaPreviews" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/small_media_previews" android:key="smallMediaPreviews" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty" />
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/advanced">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hideNSFW" android:layout="@layout/settings_item_text_layout" android:title="@string/hide_nsfw" android:key="hideNSFW" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/disableAutoPlayNoWifi" android:layout="@layout/settings_item_text_layout" android:title="@string/disable_auto_play_when_no_wifi" android:key="disableAutoPlayNoWifi" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hideGifIcon" android:layout="@layout/settings_item_text_layout" android:title="@string/hide_gif_icon" android:key="hideGifIcon" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hideMediaPreviews" android:layout="@layout/settings_item_text_layout" android:title="@string/hide_media_previews" android:key="hideMediaPreviews" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hideMediaPreviewsNoWifi" android:layout="@layout/settings_item_text_layout" android:title="@string/hide_media_previews_when_not_on_wifi" android:key="hideMediaPreviewsNoWifi" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hideWebsitePreviews" android:layout="@layout/settings_item_text_layout" android:title="@string/hide_website_previews" android:key="hideWebsitePreviews" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hideStatusOnViewer" android:layout="@layout/settings_item_text_layout" android:title="@string/hide_status_on_viewer" android:key="hideStatusOnViewer" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/lowResMediaPreviews" android:layout="@layout/settings_item_text_layout" android:title="@string/low_res_media_previews" android:key="lowResMediaPreviews" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

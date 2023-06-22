@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:flamingo="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:layout="@layout/settings_item_header_just_description" android:summary="@string/have_the_tabs">
+        <com.samruston.twitter.settings.preferences.ThemeSwitchPreference android:id="@id/customTabColor" android:layout="@layout/settings_item_text_layout" android:title="@string/use_custom_tab_color" android:key="customTabColor" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/tabsBackgroundColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/tab_background_color" android:key="tabsBackgroundColor" android:dependency="customTabColor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/navigation_bar">
+        <com.samruston.twitter.settings.preferences.ThemeListPreference android:entries="@array/navigationBarStyle" android:id="@id/navigationBarStyle" android:layout="@layout/settings_item_text_layout_list" android:title="@string/navigation_bar" android:key="navigationBarStyle" android:defaultValue="default" android:entryValues="@array/navigationBarStyleValues" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/navBarColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/nav_bar_color" android:key="navBarColor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/status_bar">
+        <com.samruston.twitter.settings.preferences.ThemeListPreference android:entries="@array/statusBarStyle" android:id="@id/statusBarStyle" android:layout="@layout/settings_item_text_layout_list" android:title="@string/status_bar" android:key="statusBarStyle" android:defaultValue="default" android:entryValues="@array/statusBarStyleValues" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/statusBarColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/status_bar_color" android:key="statusBarColor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/unread_counter">
+        <com.samruston.twitter.settings.preferences.ThemeSwitchPreference android:id="@id/customCounterColor" android:layout="@layout/settings_item_text_layout" android:title="@string/custom_counter_color" android:key="customCounterColor" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/counterColor" android:layout="@layout/settings_item_color_layout" android:title="@string/unread_counter_color" android:key="counterColor" android:dependency="customCounterColor" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/counterColorText" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/unread_counter_color_text" android:key="counterColorText" android:dependency="customCounterColor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/profile">
+        <com.samruston.twitter.settings.preferences.ThemeSwitchPreference android:id="@id/customProfileColor" android:layout="@layout/settings_item_text_layout" android:title="@string/custom_profile_color" android:key="customProfileColor" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/profileColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/profile_color" android:key="profileColor" android:dependency="customProfileColor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/other">
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/searchColor" android:layout="@layout/settings_item_color_layout" android:title="@string/search_bar_color" android:key="searchColor" android:summary="@string/only_used_when_toolbar_layout_is_set_to_search" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/perAccountTheme" android:layout="@layout/settings_item_text_layout" android:title="@string/theme_per_account" android:key="perAccountTheme" android:summary="@string/different_themes_for_accounts" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/wideColorGamut" android:layout="@layout/settings_item_text_layout" android:title="@string/wide_color_gamut" android:key="wideColorGamut" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/systemDarkMode" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/use_system_dark_mode" android:key="systemDarkMode" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/appBar" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="2.0dip">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:contentInsetStart="72.0dip" app:layout_scrollFlags="scroll|enterAlways" app:popupTheme="@style/AppTheme.PopupOverlay" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:tabIndicatorColor="@android:color/black" app:tabTextAppearance="@style/TabLayoutTextStyle" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.samruston.twitter.views.CustomViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:src="@drawable/quill_white" android:contentDescription="@string/new_tweet" app:backgroundTint="@color/colorPrimary" app:backgroundTintMode="src_in" app:layout_behavior="com.samruston.twitter.helpers.ScrollingFABBehavior" app:pressedTranslationZ="4.0dip" app:rippleColor="@color/colorPrimaryDark" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

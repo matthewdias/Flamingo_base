@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_arrow_upward_black_24dp" android:id="@id/reverseHideScrollingDirection" android:layout="@layout/settings_item_text_layout_icon_no_divider" android:title="@string/reverse_toolbar_scrolling_direction" android:key="reverseHideScrollingDirection" android:summary="@string/hide_toolbar_when_scrolling_up" android:defaultValue="false" />
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/tweets">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/reverseChatDirection" android:layout="@layout/settings_item_text_layout" android:title="@string/reverse_reply_direction" android:key="reverseChatDirection" android:summary="@string/connect_replies_in_your_timeline" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/confirmRetweets" android:layout="@layout/settings_item_text_layout" android:title="@string/confirm_retweets" android:key="confirmRetweets" android:summary="@string/wait_until_user_has_confirmed_by_performing" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/tweetGap" android:layout="@layout/settings_item_text_layout" android:title="@string/selected_tweet_gap" android:key="tweetGap" android:summary="@string/show_a_gap" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/showLikeRetweetNumber" android:layout="@layout/settings_item_text_layout" android:title="@string/show_like_and_retweet_numbers" android:key="showLikeRetweetNumber" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/showTimeOfRetweet" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/show_when_retweeted" android:key="showTimeOfRetweet" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/unread_counter">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hideCounter" android:layout="@layout/settings_item_text_layout" android:title="@string/hide_unread_counter" android:key="hideCounter" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/counterOldestUnread" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/tap_unread_counter_to_jump_to_oldest_unread_tweet" android:key="counterOldestUnread" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/tweet_details">
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:entries="@array/order" android:id="@id/replyDirection" android:layout="@layout/settings_item_text_layout_list_no_divider" android:title="@string/reply_order" android:key="replyDirection" android:summary="@string/select_how_replies_are" android:defaultValue="likes" android:entryValues="@array/orderValues" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/settings_item_header_just_description" android:summary="@string/you_can_export_your_settings">
+        <Preference android:icon="@drawable/ic_insert_drive_file_black_24dp" android:id="@id/importSettings" android:layout="@layout/settings_item_text_layout_list_icon" android:title="@string/import_app_settings" android:key="importSettings" />
+        <Preference android:icon="@drawable/ic_share_white_24dp" android:id="@id/exportSettings" android:layout="@layout/settings_item_text_layout_list_icon_no_divider" android:title="@string/export_app_settings" android:key="exportSettings" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_just_description">
+        <Preference android:icon="@drawable/ic_delete_black_24dp" android:id="@id/resetSettings" android:layout="@layout/settings_item_text_layout_list_icon_no_divider" android:title="@string/reset_app_settings" android:key="resetSettings" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/read_later">
+        <Preference android:icon="@drawable/ic_insert_drive_file_black_24dp" android:id="@id/importReadLater" android:layout="@layout/settings_item_text_layout_list_icon" android:title="@string/import_read_later" android:key="importReadLater" />
+        <Preference android:icon="@drawable/ic_share_white_24dp" android:id="@id/exportReadLater" android:layout="@layout/settings_item_text_layout_list_icon_no_divider" android:title="@string/export_read_later" android:key="exportReadLater" />
+    </PreferenceCategory>
+</PreferenceScreen>

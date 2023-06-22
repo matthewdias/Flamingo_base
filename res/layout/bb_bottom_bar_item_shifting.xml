@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/BB_BottomBarItem_Shifting"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@id/bb_bottom_bar_icon" android:layout_width="24.0dip" android:layout_height="38.0dip" android:scaleType="fitCenter" android:layout_centerHorizontal="true" android:alpha="0.6" />
+    <TextView android:textAppearance="@style/BB_BottomBarItem_Shifting.TitleAppearance" android:gravity="center_horizontal" android:id="@id/bb_bottom_bar_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_alignParentBottom="true" style="@style/BB_BottomBarItem_TitleStyle" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/item" android:layout_width="fill_parent" android:layout_height="@dimen/material_drawer_item_primary"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#1f000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="start|center" android:orientation="vertical" android:id="@id/details" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_toStartOf="@id/qrCodesContainer">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/material_drawer_icon" android:paddingTop="@dimen/material_drawer_item_primary_icon_padding" android:paddingBottom="@dimen/material_drawer_item_primary_icon_padding" android:layout_width="@dimen/material_drawer_item_primary_icon" android:layout_height="@dimen/material_drawer_item_primary" android:layout_centerVertical="true" android:paddingStart="0.0dip" android:paddingEnd="@dimen/material_drawer_item_primary_icon_padding_right" />
+        <TextView android:textSize="@dimen/material_drawer_item_primary_text" android:gravity="start|center" android:id="@id/material_drawer_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_centerVertical="true" android:fontFamily="sans-serif-medium" android:textDirection="anyRtl" android:layout_toEndOf="@id/material_drawer_icon" />
+        <TextView android:textSize="@dimen/material_drawer_item_primary_description" android:gravity="start|center" android:id="@id/material_drawer_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:fontFamily="sans-serif" android:textDirection="anyRtl" android:layout_toEndOf="@id/material_drawer_icon" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/qrCodesContainer" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toStartOf="@id/moonContainer">
+        <ImageView android:gravity="end|center" android:id="@id/qrCodes" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_qrcode_black_24" android:contentDescription="@string/qr_codes" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/moonContainer" android:background="?selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+        <ImageView android:gravity="end|center" android:id="@id/moon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:contentDescription="@string/night_mode" />
+    </LinearLayout>
+</RelativeLayout>

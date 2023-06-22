@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_timeline_white_24dp" android:id="@id/activityGraph" android:layout="@layout/settings_item_text_layout_icon_no_divider" android:title="@string/activity_graph" android:key="activityGraph" android:summary="@string/show_summary_graph" />
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/navigation" android:summary="@string/customise_the_layout_of_your_tabs_and_toolbars">
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:entries="@array/navigationModes" android:id="@id/navigationType" android:layout="@layout/settings_item_text_layout_list" android:title="@string/navigation_mode" android:key="navigationType" android:defaultValue="fixed" android:entryValues="@array/navigationModesValues" />
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:entries="@array/toolbarModes" android:id="@id/toolbarType" android:layout="@layout/settings_item_text_layout_list" android:title="@string/toolbar_layout" android:key="toolbarType" android:defaultValue="dropdown" android:entryValues="@array/toolbarModesValues" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/navigationIcons" android:layout="@layout/settings_item_text_layout" android:title="@string/show_icons" android:key="navigationIcons" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/navigationText" android:layout="@layout/settings_item_text_layout" android:title="@string/show_text" android:key="navigationText" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/navigationBadges" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/show_badges" android:key="navigationBadges" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/scrolling" android:summary="@string/choose_what_disappears_when_scrolling">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/lockToolbar" android:layout="@layout/settings_item_text_layout" android:title="@string/lock_toolbar_when_scrolling" android:key="lockToolbar" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/lockTabs" android:layout="@layout/settings_item_text_layout" android:title="@string/lock_tabs_when_scrolling" android:key="lockTabs" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/lockFab" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/lock_compose_button_when_scrolling" android:key="lockFab" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/compose_new_tweet">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/showFab" android:layout="@layout/settings_item_text_layout" android:title="@string/show_compose_button" android:key="showFab" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/showProfileFab" android:layout="@layout/settings_item_text_layout" android:title="@string/show_compose_on_profile" android:key="showProfileFab" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/showComposeInMenu" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/show_in_navigation_menu" android:key="showComposeInMenu" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/user_avatars">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_tab_black_24dp" android:id="@id/use_profile_icons_as_tabs" android:layout="@layout/settings_item_text_layout_icon" android:title="@string/use_profile_icons_as_tabs" android:key="profileIconTabs" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_account_circle_black_24dp" android:id="@id/circleProfileImage" android:layout="@layout/settings_item_text_layout_icon" android:title="@string/circular_profile_image" android:key="circleProfileImage" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_person_black_24dp" android:id="@id/showProfilePictureInSpinner" android:layout="@layout/settings_item_text_layout_icon_no_divider" android:title="@string/show_avatar_in_user_dropdown" android:key="showProfilePictureInSpinner" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_just_description" android:summary="@string/how_to_arrange_a_list_of_users">
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:icon="@drawable/ic_people_black_24dp" android:entries="@array/userResultModes" android:id="@id/userResultLayout" android:layout="@layout/settings_item_text_layout_list_icon" android:title="@string/user_list_layout" android:key="userResultLayout" android:defaultValue="grid" android:entryValues="@array/userResultModesValues" />
+    </PreferenceCategory>
+</PreferenceScreen>

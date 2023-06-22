@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:focusable="true" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="16.0dip" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:textAlignment="viewStart" android:layout_toStartOf="@id/checkbox" android:layout_alignParentStart="true" app:typeface="roboto_medium" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+</RelativeLayout>

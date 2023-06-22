@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/settings_item_header_just_description" android:summary="@string/streaming_opens">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/streamTweets" android:layout="@layout/settings_item_text_layout" android:title="@string/stream_tweets_in_app_over_wifi" android:key="streamTweets" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/streamTweetsData" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/stream_tweets_over_data" android:key="streamTweetsData" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/autoScrollNewTweets" android:layout="@layout/settings_item_text_layout" android:title="@string/pin_to_top" android:key="autoScrollNewTweets" android:summary="@string/scroll_new_tweets_into_view" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/disablePullToRefresh" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/disable_pull_to_refresh" android:key="disablePullToRefresh" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

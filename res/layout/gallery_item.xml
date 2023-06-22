@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samruston.twitter.views.TransitionImageView android:id="@id/image" android:background="#0a000000" android:layout_width="fill_parent" android:layout_height="130.0dip" android:scaleType="centerCrop" />
+    <View android:id="@id/overlay" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="130.0dip" />
+    <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="14.0dip" android:textColor="@android:color/white" android:layout_gravity="end|bottom|center" android:id="@id/gifIcon" android:background="@drawable/rounded_gif_icon" android:padding="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="GIF" android:textAllCaps="true" android:letterSpacing="0.04" app:typeface="roboto_bold" />
+</FrameLayout>

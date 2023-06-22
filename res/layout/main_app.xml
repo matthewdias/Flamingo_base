@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinatorLayout" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/app_bar_layout" />
+    <com.samruston.twitter.views.CustomViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="16.0dip" android:layout_gravity="start|bottom|center" android:id="@id/counterFloating" android:background="@drawable/quote_background" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:text="0" android:contentDescription="@string/unread_counter" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:elevation="2.0dip" app:typeface="roboto_bold" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/fab" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:src="@drawable/quill_white" android:contentDescription="@string/new_tweet" app:backgroundTint="@color/colorPrimary" app:backgroundTintMode="src_in" app:pressedTranslationZ="4.0dip" app:rippleColor="@color/colorPrimaryDark" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

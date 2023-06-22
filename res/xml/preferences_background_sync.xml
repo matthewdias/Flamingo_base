@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/settings_item_header_just_description" android:summary="@string/data_sync_downloads">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/dataService" android:layout="@layout/settings_item_text_layout" android:title="@string/enable_data_sync" android:key="dataService" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:entries="@array/updateInterval" android:id="@id/dataServiceIntervalPref" android:layout="@layout/settings_item_text_layout_list" android:title="@string/sync_interval" android:key="dataServiceIntervalPref" android:dependency="dataService" android:defaultValue="30" android:entryValues="@array/updateIntervalValues" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/dataServiceWifi" android:layout="@layout/settings_item_text_layout" android:title="@string/only_sync_on_wifi" android:key="dataServiceWifi" android:dependency="dataService" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/dataServiceNotification" android:layout="@layout/settings_item_text_layout" android:title="@string/notify_about_new_timeline_tweets" android:key="dataServiceNotification" android:dependency="dataService" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/dataServiceListsNotification" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/notify_about_new_list_tweets" android:key="dataServiceListsNotification" android:dependency="dataService" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/cacheImagesInBackground" android:layout="@layout/settings_item_text_layout" android:title="@string/download_images_for_offline_use" android:key="cacheImagesInBackground" android:dependency="dataService" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:entries="@array/cacheSize" android:id="@id/cacheImagesSizePref" android:layout="@layout/settings_item_text_layout_list_no_divider" android:title="@string/offline_storage_size" android:key="cacheImagesSizePref" android:defaultValue="50" android:entryValues="@array/cacheSizeValues" />
+    </PreferenceCategory>
+</PreferenceScreen>

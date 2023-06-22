@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/ic_filter_list_white_24dp" android:id="@id/filter" android:title="@string/filter" app:showAsAction="always" />
+    <item android:id="@id/add_to_homescreen" android:title="@string/add_to_home_screen" app:showAsAction="never" />
+    <item android:id="@id/changeLocation" android:title="@string/change_trends_location" app:showAsAction="never" />
+    <item android:id="@id/saveSearch" android:title="@string/save_search" app:showAsAction="never" />
+    <item android:id="@id/clearHistory" android:title="@string/clear_history" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:id="@id/downloadLocation" android:layout="@layout/settings_item_text_layout_list" android:title="@string/download_location" android:key="downloadLocation" />
+    <ListPreference android:entries="@array/refreshTweetAmount" android:id="@id/refreshTweetAmountPref" android:layout="@layout/settings_item_text_layout_list_no_divider" android:title="@string/tweets_per_refresh" android:key="refreshTweetAmountPref" android:defaultValue="1000" android:entryValues="@array/refreshTweetAmount" />
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hideAllRetweets" android:layout="@layout/settings_item_text_layout" android:title="@string/hide_all_retweets" android:key="hideAllRetweets" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hideAllReplies" android:layout="@layout/settings_item_text_layout" android:title="@string/hide_all_replies" android:key="hideAllReplies" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/mutesUsersLists" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/mute_users_in_lists" android:key="mutesUsersLists" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/disableAutoRefresh" android:layout="@layout/settings_item_text_layout" android:title="@string/disable_auto_refresh" android:key="disableAutoRefresh" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/alwaysJumpToTop" android:layout="@layout/settings_item_text_layout" android:title="@string/jump_to_top_on_start" android:key="alwaysJumpToTop" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/refreshOnSendTweet" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/refresh_when_sending_tweet" android:key="refreshOnSendTweet" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:entries="@array/teslaUnread" android:id="@id/teslaUnreadMode" android:layout="@layout/settings_item_text_layout_list_no_divider" android:title="@string/tesla_unread" android:key="teslaUnreadMode" android:defaultValue="notifications" android:entryValues="@array/teslaUnreadValues" />
+    </PreferenceCategory>
+</PreferenceScreen>

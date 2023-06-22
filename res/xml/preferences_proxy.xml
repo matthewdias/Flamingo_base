@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/proxyEnabled" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/enable_proxy" android:key="proxyEnabled" android:defaultValue="false" />
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomEditTextPreference android:id="@id/proxyHost" android:layout="@layout/settings_item_text_layout" android:title="@string/host" android:key="proxyHost" android:dependency="proxyEnabled" />
+        <com.samruston.twitter.settings.preferences.CustomEditTextPreference android:id="@id/proxyPort" android:layout="@layout/settings_item_text_layout" android:title="@string/port" android:key="proxyPort" android:dependency="proxyEnabled" android:inputType="number" />
+        <com.samruston.twitter.settings.preferences.CustomEditTextPreference android:id="@id/proxyUsername" android:layout="@layout/settings_item_text_layout" android:title="@string/username" android:key="proxyUsername" android:dependency="proxyEnabled" />
+        <com.samruston.twitter.settings.preferences.CustomEditTextPreference android:id="@id/proxyPassword" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/password" android:key="proxyPassword" android:dependency="proxyEnabled" />
+    </PreferenceCategory>
+</PreferenceScreen>

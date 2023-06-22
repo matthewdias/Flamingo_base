@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/container" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/main" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_centerVertical="true" android:layout_marginStart="20.0dip" android:layout_alignParentStart="true" />
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="20.0dip" android:layout_toStartOf="@id/open" android:layout_toEndOf="@id/icon">
+            <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="14.0dip" android:textColor="@color/textDarkAlpha" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tap_to_view" android:maxLines="1" android:textAlignment="viewStart" android:layout_marginStart="4.0dip" android:layout_toEndOf="@id/title" app:typeface="roboto_regular" />
+            <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="15.0dip" android:textColor="@color/textDark" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textAlignment="viewStart" app:typeface="roboto_medium" />
+            <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="13.0dip" android:textColor="@color/textDarkAlpha" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="2" android:layout_below="@id/title" android:lineSpacingExtra="3.0dip" android:textAlignment="viewStart" android:paddingEnd="16.0dip" app:typeface="roboto_regular" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/open" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_open_in_new_black_24dp" android:tint="@color/textDarkAlphaAlpha" android:layout_centerVertical="true" android:layout_marginEnd="24.0dip" android:layout_alignParentEnd="true" android:tintMode="src_in" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/verified" android:background="@drawable/circle_bright" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginTop="36.0dip" android:layout_marginStart="38.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/verifiedIcon" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/verified_icon" />
+    </FrameLayout>
+    <View android:id="@id/divider" android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/main" />
+</RelativeLayout>

@@ -1,0 +1,57 @@
+.class Lcom/samruston/twitter/fragments/l$c$b$a;
+.super Ljava/lang/Object;
+.source "MyApplication"
+
+# interfaces
+.implements Lcom/samruston/twitter/api/API$h3;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/samruston/twitter/fragments/l$c$b;->a(Lcom/afollestad/materialdialogs/MaterialDialog;Lcom/afollestad/materialdialogs/DialogAction;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/samruston/twitter/fragments/l$c$b;
+
+
+# direct methods
+.method constructor <init>(Lcom/samruston/twitter/fragments/l$c$b;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/samruston/twitter/fragments/l$c$b$a;->a:Lcom/samruston/twitter/fragments/l$c$b;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public b()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/samruston/twitter/fragments/l$c$b$a;->a:Lcom/samruston/twitter/fragments/l$c$b;
+
+    iget-object v0, v0, Lcom/samruston/twitter/fragments/l$c$b;->a:Lcom/samruston/twitter/fragments/l$c;
+
+    iget-object v0, v0, Lcom/samruston/twitter/fragments/l$c;->a:Lcom/samruston/twitter/fragments/l;
+
+    invoke-static {v0}, Lcom/samruston/twitter/fragments/l;->y1(Lcom/samruston/twitter/fragments/l;)V
+
+    return-void
+.end method

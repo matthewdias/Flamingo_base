@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_zoom_in_black_24dp" android:id="@id/hoverPreview" android:layout="@layout/settings_item_text_layout_icon_no_divider" android:title="@string/hover_preview" android:key="hoverPreview" android:summary="@string/long_press_on_profile_pictures_to_preview" android:defaultValue="true" />
+    <PreferenceCategory android:layout="@layout/settings_item_header_just_description" android:summary="@string/move_your_finger">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hoverExpandProfile" android:layout="@layout/settings_item_text_layout" android:title="@string/expand_profile" android:key="hoverExpandProfile" android:dependency="hoverPreview" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hoverExpandMedia" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/expand_media" android:key="hoverExpandMedia" android:dependency="hoverPreview" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hoverPreviewZoom" android:layout="@layout/settings_item_text_layout" android:title="@string/allow_zooming_in_hover_preview" android:key="hoverPreviewZoom" android:dependency="hoverPreview" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hoverPreviewPan" android:layout="@layout/settings_item_text_layout" android:title="@string/allow_panning_in_hover_preview" android:key="hoverPreviewPan" android:dependency="hoverPreview" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/vibrateHoverPreview" android:layout="@layout/settings_item_text_layout" android:title="@string/vibrate" android:key="vibrateHoverPreview" android:dependency="hoverPreview" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

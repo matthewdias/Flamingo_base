@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samruston.twitter.settings.preferences.StatusPreviewPreference android:layout="@layout/status_preview_preference" />
+    <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/paletteQuotes" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/theme_quotes_using_preview" android:key="paletteQuotes" android:summary="@string/use_the_color_of" android:defaultValue="true" />
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/retweetIconColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/retweet_icon_color" android:key="retweetIconColor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.ThemeSwitchPreference android:id="@id/customLinkColor" android:layout="@layout/settings_item_text_layout" android:title="@string/custom_link_color" android:key="customLinkColor" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/timelineLinkColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/link_color" android:key="timelineLinkColor" android:dependency="customLinkColor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.ThemeSwitchPreference android:id="@id/customTweetColors" android:layout="@layout/settings_item_text_layout" android:title="@string/custom_tweet_color" android:key="customTweetColors" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/tweetTextColor" android:layout="@layout/settings_item_color_layout" android:title="@string/tweet_color" android:key="tweetTextColor" android:dependency="customTweetColors" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/tweetNameColor" android:layout="@layout/settings_item_color_layout" android:title="@string/name_color" android:key="tweetNameColor" android:dependency="customTweetColors" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/tweetTimeColor" android:layout="@layout/settings_item_color_layout" android:title="@string/time_color" android:key="tweetTimeColor" android:dependency="customTweetColors" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/tweetUsernameColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/username_color" android:key="tweetUsernameColor" android:dependency="customTweetColors" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.ThemeSwitchPreference android:id="@id/customDividerColor" android:layout="@layout/settings_item_text_layout" android:title="@string/custom_divider_color" android:key="customDividerColor" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/dividerColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/divider_color" android:key="dividerColor" android:dependency="customDividerColor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.ThemeSwitchPreference android:id="@id/customRetweetBackground" android:layout="@layout/settings_item_text_layout" android:title="@string/custom_badge_background" android:key="customRetweetBackground" android:summary="@string/add_a_background_to_the_retweet_badge" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/retweetBackgroundColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/badge_background" android:key="retweetBackgroundColor" android:dependency="customRetweetBackground" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.ThemeSwitchPreference android:id="@id/customVerifiedColor" android:layout="@layout/settings_item_text_layout" android:title="@string/custom_verified_color" android:key="customVerifiedColor" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/verifiedColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/verified_color" android:key="verifiedColor" android:dependency="customVerifiedColor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.ThemeSwitchPreference android:id="@id/customInReplyColor" android:layout="@layout/settings_item_text_layout" android:title="@string/custom_reply_color" android:key="customInReplyColor" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/replyColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/reply_color" android:key="replyColor" android:dependency="customInReplyColor" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.ThemeSwitchPreference android:id="@id/customQuoteBackground" android:layout="@layout/settings_item_text_layout" android:title="@string/custom_quote_background" android:key="customQuoteBackground" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/quoteBackgroundColor" android:layout="@layout/settings_item_color_layout" android:title="@string/quote_background" android:key="quoteBackgroundColor" android:dependency="customQuoteBackground" />
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/quoteTextColor" android:layout="@layout/settings_item_color_layout_no_divider" android:title="@string/quote_text" android:key="quoteTextColor" android:dependency="customQuoteBackground" />
+    </PreferenceCategory>
+</PreferenceScreen>

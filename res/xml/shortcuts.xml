@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut android:icon="@mipmap/shortcut_compose" android:enabled="true" android:shortcutId="compose" android:shortcutShortLabel="@string/new_tweet" android:shortcutLongLabel="@string/new_tweet" android:shortcutDisabledMessage="@string/compose_new_tweet">
+        <intent android:targetPackage="com.samruston.twitter" android:action="android.intent.action.VIEW" android:targetClass="com.samruston.twitter.NewStatusActivity">
+            <extra android:name="fromNotification" android:value="true" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@mipmap/shortcut_message" android:enabled="true" android:shortcutId="message" android:shortcutShortLabel="@string/send_message" android:shortcutLongLabel="@string/send_message" android:shortcutDisabledMessage="@string/send_message">
+        <intent android:targetPackage="com.samruston.twitter" android:action="android.intent.action.SEND" android:targetClass="com.samruston.twitter.UserPickerActivity">
+            <extra android:name="withText" android:value="" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@mipmap/shortcut_profile" android:enabled="true" android:shortcutId="profile" android:shortcutShortLabel="@string/profile" android:shortcutLongLabel="@string/profile" android:shortcutDisabledMessage="@string/profile">
+        <intent android:targetPackage="com.samruston.twitter" android:action="android.intent.action.VIEW" android:targetClass="com.samruston.twitter.ProfileActivity">
+            <extra android:name="fromNotification" android:value="true" />
+        </intent>
+    </shortcut>
+    <shortcut android:icon="@mipmap/shortcut_search" android:enabled="true" android:shortcutId="search" android:shortcutShortLabel="@string/search" android:shortcutLongLabel="@string/search" android:shortcutDisabledMessage="@string/search">
+        <intent android:targetPackage="com.samruston.twitter" android:action="android.intent.action.VIEW" android:targetClass="com.samruston.twitter.SearchActivity">
+            <extra android:name="fromNotification" android:value="true" />
+        </intent>
+    </shortcut>
+</shortcuts>

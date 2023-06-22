@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/timeline_drawer_tint_dark" android:id="@id/timeline" android:checked="true" android:title="@string/timeline" />
+        <item android:icon="@drawable/ic_notifications_white_24dp" android:id="@id/activity" android:checked="false" android:title="@string/notifications" />
+        <item android:icon="@drawable/inbox_drawer_tint_dark" android:id="@id/inbox" android:checked="false" android:title="@string/direct_messages" />
+        <item android:icon="@drawable/profile_drawer_tint_dark" android:id="@id/profile" android:checked="false" android:title="@string/profile" />
+        <item android:icon="@drawable/lists_drawer_tint_dark" android:id="@id/lists" android:checked="false" android:title="@string/lists" />
+        <item android:icon="@drawable/search_drawer_tint_dark" android:id="@id/search" android:checked="false" android:title="@string/search" />
+        <item android:icon="@drawable/ic_markunread_mailbox_white_24dp" android:id="@id/read_later" android:checked="false" android:title="@string/read_later" />
+        <item android:icon="@drawable/settings_drawer_tint_dark" android:id="@id/settings" android:checked="false" android:title="@string/settings" />
+    </group>
+</menu>

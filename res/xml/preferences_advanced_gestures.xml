@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout="@layout/settings_item_header_just_description" android:summary="@string/configure_tweet_gestures">
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:icon="@drawable/ic_gesture_tap_black_24dp" android:entries="@array/gestures" android:id="@id/tap" android:layout="@layout/settings_item_text_layout_list_icon" android:title="@string/tap" android:key="gestureTap" android:defaultValue="actions" android:entryValues="@array/gesturesValues" />
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:icon="@drawable/ic_gesture_double_tap_black_24dp" android:entries="@array/gestures" android:id="@id/doubleTap" android:layout="@layout/settings_item_text_layout_list_icon" android:title="@string/double_tap" android:key="gestureDouble" android:defaultValue="nothing" android:entryValues="@array/gesturesValues" />
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:icon="@drawable/ic_long_press_black_24dp" android:entries="@array/gestures" android:id="@id/longPress" android:layout="@layout/settings_item_text_layout_list_icon_no_divider" android:title="@string/long_press" android:key="gestureLong" android:defaultValue="details" android:entryValues="@array/gesturesValues" />
+    </PreferenceCategory>
+</PreferenceScreen>

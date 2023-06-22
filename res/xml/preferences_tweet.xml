@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_reply_black_24dp" android:id="@id/groupReplies" android:layout="@layout/settings_item_text_layout_icon" android:title="@string/group_replies" android:key="groupReplies" android:summary="@string/connect_replies_in_your_timeline" android:defaultValue="true" />
+    <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/pinned_tweet" android:id="@id/pinnedTweets" android:layout="@layout/settings_item_text_layout_icon_no_divider" android:title="@string/pinned_tweets" android:key="pinnedTweets" android:summary="@string/show_pinned_tweets_on_profiles" android:defaultValue="true" />
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:icon="@drawable/ic_access_time_white_24dp" android:entries="@array/timeFormats" android:id="@id/clockFormat" android:layout="@layout/settings_item_text_layout_list_icon" android:title="@string/time_format" android:key="clockFormat" android:defaultValue="default" android:entryValues="@array/timeFormatsValues" />
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:icon="@drawable/ic_today_black_24dp" android:entries="@array/dateFormats" android:id="@id/dateFormat" android:layout="@layout/settings_item_text_layout_list_icon_no_divider" android:title="@string/date_format" android:key="dateFormat" android:defaultValue="default" android:entryValues="@array/dateFormatsValues" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/user_avatars">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/avatarVerified" android:layout="@layout/settings_item_text_layout" android:title="@string/verified_icon" android:key="avatarVerified" android:defaultValue="true" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/largeAvatars" android:layout="@layout/settings_item_text_layout" android:title="@string/large_avatars" android:key="largeAvatars" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/useSquareIcons" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/use_square_icons" android:key="useSquareIcons" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/alwaysShowActions" android:layout="@layout/settings_item_text_layout" android:title="@string/always_show_tweet_actions" android:key="alwaysShowActions" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/removeLeftSpace" android:layout="@layout/settings_item_text_layout" android:title="@string/remove_left_whitespace" android:key="removeLeftSpace" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/fullScreenMedia" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/full_screen_media_previews" android:key="fullScreenMedia" android:dependency="removeLeftSpace" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/advanced">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/expandConversations" android:layout="@layout/settings_item_text_layout" android:title="@string/expand_conversations_in_timeline" android:key="expandConversations" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/truncateTweets" android:layout="@layout/settings_item_text_layout" android:title="@string/truncate_tweets" android:key="truncateTweets" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomListPreference android:entries="@array/nameMode" android:id="@id/tweetNameMode" android:layout="@layout/settings_item_text_layout_list" android:title="@string/show_name" android:key="tweetNameMode" android:defaultValue="both" android:entryValues="@array/nameModeValues" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/useLegacyReplies" android:layout="@layout/settings_item_text_layout" android:title="@string/use_legacy_replies" android:key="useLegacyReplies" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/hideAvatars" android:layout="@layout/settings_item_text_layout" android:title="@string/hide_avatars_in_timeline" android:key="hideAvatars" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/highResProfilePics" android:layout="@layout/settings_item_text_layout" android:title="@string/high_res_avatars_in_timeline" android:key="highResProfilePics" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/showUsernameOnRetweet" android:layout="@layout/settings_item_text_layout" android:title="@string/show_username_on_retweet" android:key="showUsernameOnRetweet" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/reduceSpacing" android:layout="@layout/settings_item_text_layout" android:title="@string/reduce_tweet_spacing" android:key="reduceSpacing" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:id="@id/useAbsoluteTime" android:layout="@layout/settings_item_text_layout_no_divider" android:title="@string/use_absolute_time" android:key="useAbsoluteTime" android:defaultValue="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

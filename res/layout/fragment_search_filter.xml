@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.samruston.twitter.views.CustomRecyclerView android:id="@id/recyclerView" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="100.0dip" android:paddingStart="32.0dip" />
+        <View android:id="@id/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" />
+        <LinearLayout android:orientation="horizontal" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:baselineAligned="false" android:weightSum="2.0" android:paddingStart="32.0dip" android:paddingEnd="30.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="16.0dip" android:id="@id/locationTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/location" app:typeface="roboto_medium" />
+                <com.samruston.twitter.views.chips.CustomSpinner android:theme="@style/Theme.AppCompat.Light" android:id="@id/locationSpinner" android:background="@android:color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginEnd="20.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="16.0dip" android:id="@id/fromTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/account" app:typeface="roboto_medium" />
+                <com.devspark.robototextview.widget.RobotoEditText android:theme="@style/Theme.AppCompat.Light" android:textSize="16.0dip" android:id="@id/from" android:background="@android:color/transparent" android:padding="10.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="\@" app:typeface="roboto_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.samruston.twitter.settings.preferences.NightThemePreviewPreference android:layout="@layout/theme_preview_preference" />
+    <PreferenceCategory android:layout="@layout/settings_item_header_empty">
+        <com.samruston.twitter.settings.preferences.CustomSwitchPreference android:icon="@drawable/ic_moon_24dp_black" android:id="@id/nightModeClock" android:layout="@layout/settings_item_text_layout_icon" android:title="@string/automatically_use_night_mode" android:key="nightModeClock" android:defaultValue="false" />
+        <com.samruston.twitter.settings.preferences.TimePreference android:id="@id/nightModeStartTime" android:layout="@layout/settings_item_text_layout_list" android:title="@string/night_mode_start_time" android:key="nightModeStartTime" android:dependency="nightModeClock" android:defaultValue="19:00" />
+        <com.samruston.twitter.settings.preferences.TimePreference android:id="@id/nightModeEndTime" android:layout="@layout/settings_item_text_layout_list_no_divider" android:title="@string/night_mode_end_time" android:key="nightModeEndTime" android:dependency="nightModeClock" android:defaultValue="5:00" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout="@layout/settings_item_header" android:title="@string/colors">
+        <com.samruston.twitter.settings.preferences.ColorPreference android:id="@id/primaryColorNight" android:layout="@layout/settings_item_color_layout" android:title="@string/night_primary_color" android:key="primaryColorNight" />
+        <com.samruston.twitter.settings.preferences.ThemeListPreference android:entries="@array/nightModeBackgrounds" android:id="@id/nightModeBackground" android:layout="@layout/settings_item_text_layout_list_no_divider" android:title="@string/night_mode_background" android:key="nightModeBackground" android:defaultValue="dark" android:entryValues="@array/nightModeBackgroundsValues" />
+    </PreferenceCategory>
+</PreferenceScreen>

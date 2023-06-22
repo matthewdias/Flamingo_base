@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.samruston.twitter.views.ScalingRobotoTextView android:textSize="16.0dip" android:textColor="?settingsText" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" app:typeface="roboto_medium" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/dropdownArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_drop_down_white_24dp" android:tint="?settingsText" android:layout_marginStart="4.0dip" android:tintMode="src_in" />
+</LinearLayout>
